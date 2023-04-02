@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/weblogo.png" type="image/jpg" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- slider links -->
+    <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <title>Ciruit Bazaar</title>
+  </head>
+  <body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <!-- Logo of the company -->
+            <div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+            <!-- Search container -->
+            <div id="search">
+              <i class="fas fa-search search"></i>
+              <input type="text" id="input" name="searchBox" placeholder="Search for Sensors and electronic items">
+            </div>
+            <div class="location-container">
+              <div class="location-text">
+                <span class="location-line1">HELLO,</span>
+                <br>
+                <span class="location-line2">SELECT YOUR ADDRESS</span>
+              </div>
+              <a href="#">
+                <div class="location-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+              </a>
+            </div>
+
+            <!-- Shopping Cart -->
+            <a href="cart.html">
+              <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge">3</span>
+              </div>
+            </a>
+            <!-- User login icon -->
+            <a href="login.html">
+              <div class="user-icon">
+                <i class="fas fa-user"></i>
+              </div>
+            </a>                       
+        </ul>
+  
+    </nav>
+    <nav class="navbar2">
+      <div class="dropdown">
+        <a href="#">Microcontrollers</a>
+        <div class="dropdown-content">
+          <a href="#">Fused Deposition Modeling (FDM)</a>
+          <a href="#">Stereolithography (SLA)</a>
+          <a href="#">Selective Laser Sintering (SLS)</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Sensors</a>
+        <div class="dropdown-content">
+          <a href="#">Fused Deposition Modeling (FDM)</a>
+          <a href="#">Stereolithography (SLA)</a>
+          <a href="#">Selective Laser Sintering (SLS)</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Circuit Equipements</a>
+        <div class="dropdown-content">
+          <a href="#">Fused Deposition Modeling (FDM)</a>
+          <a href="#">Stereolithography (SLA)</a>
+          <a href="#">Selective Laser Sintering (SLS)</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">3D printing</a>
+        <div class="dropdown-content">
+          <a href="#">Fused Deposition Modeling (FDM)</a>
+          <a href="#">Stereolithography (SLA)</a>
+          <a href="#">Selective Laser Sintering (SLS)</a>
+        </div>
+      </div>
+      <a href="#">PCB Printing</a>
+      <a href="#">DIY Kits</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    
+      <!-- SLIDER -->
+      <div id="2"></div>
+      <script>
+          load("slider.html");
+          function load(url)
+          {
+              req = new XMLHttpRequest();
+              req.open("GET", url, false);
+              req.send(null);
+              document.getElementById("2").innerHTML = req.responseText;
+          }
+      </script>
+      <!-- slider JS START -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+      <script>
+      $(document).ready(function()
+      {
+        $('#containerSlider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        });
+      });
+      </script>
+      <!-- slider JS ENDS -->
+
+      <!-- CONTENT SECTION -->
+      <div id="3"></div>
+      <script>
+          load("content.html");
+          function load(url)
+          {
+              req = new XMLHttpRequest();
+              req.open("GET", url, false);
+              req.send(null);
+              document.getElementById(3).innerHTML = req.responseText;
+          }
+      </script>
+      <!-- content JS -->
+      <script src="content.js"></script>
+      
+      <!-- FOOTER -->
+      <div id="4"></div>
+      <script>
+          load("footer.html");
+          function load(url)
+          {
+              req = new XMLHttpRequest();
+              req.open("GET", url, false);
+              req.send(null);
+              document.getElementById(4).innerHTML = req.responseText;
+          }
+      </script>
+  </body>
+</html>

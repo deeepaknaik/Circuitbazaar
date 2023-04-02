@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+.logo img{
+    width: 200px;
+    border: 3px solid white;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 100px;
+}
+.nav-list{
+    width: 50%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-right:0%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*search container*/
+#search {
+    position: relative;
+    margin-right: 100px;
+}
+  
+.search {
+    position: absolute;
+    padding: 14px;
+    color: rgb(29, 29, 29);
+    min-width: 25px;
+    text-align: center;
+}
+
+#input {
+    width: 35em;
+    height: 3em;
+    padding: 2px 50px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 5px;
+}
+  
+#input::placeholder {
+    font-weight: bold;
+}
+  
+#input:focus {
+    outline: none;
+}
+/* Location icon */
+.location-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    font-size: 35px; /* you can adjust the size as per your requirement */
+    color: #000053; /* set the color of the icon as per your design */
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+  }
+
+/* Location address */
+.location-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .location-text {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    color: #000053;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 8px;
+  }
+  .location-line1 {
+    font-weight: bold;
+  }
+  
+  .location-line2 {
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .location-text {
+      display: none;
+    }
+  }
+  
+/*cart*/
+.cart {
+    float: right;
+    margin-right: 20px;
+    line-height: 50px;
+    font-size: 24px;
+    padding-left: 50%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    color: #000053;
+    margin-left: 20pxpx;
+}
+.cart-badge {
+    background-color: #000053;
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+/* User Icon badge   */
+.user-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000053;
+    margin-left: 20px;
+}
+  
+.user-icon i {
+    font-size: 24px;
+    color: white;
+}
+  
+    
+/* Navigation bar container */
+.navbar2 {
+    background-color: #000053;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 100;
+    width:98%;
+    cursor: pointer;
+}
+  
+/* Navigation bar links */
+.navbar2 a {
+    color: white;
+    font-size: 18px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    padding: 8.8px;
+    transition: background-color 0.3s ease;
+}
+  
+/* Navigation bar link on hover */
+.navbar2 a:hover {
+    background-color: white;
+    color: #000053;
+}
+  
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 20px;
+}
+  
+/* Dropdown link */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Dropdown link on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+/* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.background{
+    background: white;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+  
+  
+  
