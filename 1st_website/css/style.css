@@ -19,6 +19,7 @@
 }
 
 .navbar{
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,6 +161,7 @@
     
 /* Navigation bar container */
 .navbar2 {
+    z-index: 10;
     background-color: #000053;
     height: 40px;
     display: flex;
@@ -230,6 +232,8 @@
     background-blend-mode: darken;
 }
 
-  
+.slider-z{
+    z-index: 0;
+} 
   
   
